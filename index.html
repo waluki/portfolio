@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Amaranth:wght@700&family=David+Libre:wght@500&family=EB+Garamond&family=Kanit:wght@300&family=Playfair+Display:wght@700&family=Roboto:wght@100;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="node_modules/eins-modal/dist/css/eins-modal.min.css">
 
     <title>Portafolio Isaac Castillo</title>
 </head>
@@ -25,7 +26,7 @@
     
     <nav id="navbar">
         <div>
-        <span id="derecha"><b>Isaac Castillo </b>
+        <span id="derecha"><b>Isaac Castillo ●</b>
                         <small><a href="/CV ISAAC CASTILLO FERNANDEZ (3) (1) (1) (1).pdf" download="CV ISAAC CASTILLO FERNANDEZ (3) (1) (1) (1).pdf"> Descargar CV ⇩</a></small> </span>
         <button id="hamburger"><b>≡</b></button>
         </div>
@@ -59,17 +60,17 @@
     <hr>
     <section id="experiencia">
         <h2>Experiencia</h2>
-        <div class="experiencia1"> 
+        <div class="experiencia1"  data-modal-id="myModal"> 
              
             <img src="/imagenes/experiencia/icons8-miner-64.png" alt="minero"> 
             <div>Ingeniero consultor de minería</div> 
         </div>  
-        <div class="experiencia2"> 
+        <div class="experiencia2" data-modal-id="myModal2"> 
             <img src="/imagenes/experiencia/icons8-entrega-48.png" alt="camion_repartidor"> 
             <div>Repartidor Arca de Noé</div>
         </div>
         
-        <div class="experiencia3"> 
+        <div class="experiencia3" data-modal-id="myModal3"> 
             <img src="/imagenes/experiencia/icons8-laboratorio-48.png" alt="investigacion_de_laboratorio"> 
             <div>Publicación cientifica</div>
         </div>
@@ -121,7 +122,73 @@
         </div>
     </section>
     </main>
+    <!-- Modal -->
+<div id="myModal" class="eins-modal">
+    <div class="eins-modal-content">
+      <div class="eins-modal-close"></div>
+      <div class="job">
+      <img src="https://www.bhp.com/es/-/media/project/bhp1ip/bhp-com-en/images/_secondary-banner/2022/220513_sgo_1500.jpg?w=1200&hash=0ED3235CCD6A56C51D2DF17630CD1966" alt="">
+        <div>
+            <h4>Ingeniero consultor</h4>
+            <h5>BHP SGO & Universidad de Concepción, 2021-2022</h5>
+            <div>Se desempeñaron las
+                funciones de ingeniero de proyectos, analista de
+                datos, y apoyo en análisis de mejoras y
+                optimización para la minera BHP en conjunto con <a href=""> Leopoldo Gutierrez</a>.</div>
+        </div>
+      </div>
+      <!-- Mi primer trabajo -->
+      <button class="eins-modal-close-button">OK</button>
+    </div>
+  </div>
+
+  <div id="myModal2" class="eins-modal">
+    <div class="eins-modal-content">
+      <div class="eins-modal-close"></div>
+      <div class="job">
+        <img src="/imagenes/experiencia/slider1escritorio2251.png" alt="">
+          <div>
+              <h4>Repartidor</h4>
+              <h5>Arca de Noé, 2022</h5>
+              <div>Repartidor de tienda de mascotas
+                en toda la provincia de Concepción, Chile.
+                
+              </div>
+              <a href="https://www.elarcadenoe.cl/">Ver sitio</a>
+          </div>
+        </div>
+        <!-- segundo trabajo -->
+      <button class="eins-modal-close-button">OK</button>
+    </div>
+  </div>
+
+  <div id="myModal3" class="eins-modal">
+    <div class="eins-modal-content">
+      <div class="eins-modal-close"></div>
+      <div class="job">
+        <img src="https://www.911metallurgist.com/blog/wp-content/uploads/2015/06/Laboratory-Flotation-Testing-1024x683.jpg" alt="">
+          <div>
+              <h4>Publicación cientifica</h4>
+              <h5>Memoria pregrado Universidad de Concepción, 2019</h5>
+              <div>Memorista en área de procesamiento de minerales,
+                Proyecto ANID/FONDEF IDeA I+D/ID18I10117,
+                Universidad de Concepción. Investigación
+                científica de nuevos reactivos para el uso en la
+                flotación de la molibdenita. Posterior publicación
+                científica en base a la tesis de pregrado realizada.
+                </div>
+              <a id="paper" href="https://doi.org/10.1016/j.powtec.2020.07.032">Ver sitio</a>
+          </div>
+        </div>
+        <!-- Mi tercer trabajo -->
+  
+      
+      
+      <button class="eins-modal-close-button">OK</button>
+    </div>
+  </div>
     <footer> <small>Desarrollado por Isaac Castillo, &copy; Chile 2023</small></footer>
     <script src="/index.js"></script>
+    <script src="node_modules/eins-modal/dist/js/eins-modal.min.js"></script>
 </body>
 </html>
