@@ -283,7 +283,12 @@ li:hover {
     max-height: 350px;
     align-content: center;
     justify-content: center;
+    border-radius: 2%;
     
+}
+
+.job>div>div{
+    text-align: justify;
 }
 
 h4{
@@ -291,7 +296,7 @@ h4{
     font-size: x-large;
 }
 h5{
-    font-style:oblique;
+    font-weight:bold;
 }
 
 .job>div>a{
